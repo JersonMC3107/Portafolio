@@ -3,125 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jerson Mercado | Diseñador Web & Desarrollador</title>
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        h1, h2, h3 { color: #38bdf8; }
-        a { color: #38bdf8; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-
-        /* Contenedor principal */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        /* Cabecera (Hero) */
-        .hero {
-            text-align: center;
-            padding: 60px 0;
-            border-bottom: 1px solid #1e293b;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-        .hero p {
-            font-size: 1.2em;
-            color: #94a3b8;
-        }
-
-        /* Sección de Proyectos */
-        .projects { margin-top: 50px; }
-        .project-card {
-            background-color: #1e293b;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            border-left: 4px solid #38bdf8;
-        }
-        .project-card h3 { margin-top: 0; color: #f8fafc; }
-        
-        /* Sección de Habilidades */
-        .skills {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-        .skill-tag {
-            background-color: #0284c7;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: bold;
-        }
-
-        /* Pie de página */
-        .footer {
-            text-align: center;
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #1e293b;
-            color: #94a3b8;
-        }
-    </style>
+    <title>Jerson Mercado | Desarrollador Web & UI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <div class="container">
+    <nav class="navbar hidden">
+        <div class="logo">JM.</div>
+        <a href="TU_ENLACE_DE_LINKEDIN" target="_blank" class="btn-contact">Contactar en LinkedIn</a>
+    </nav>
+
+    <header class="hero hidden">
+        <h1>Hola, soy <span class="gradient-text">Jerson Mercado</span></h1>
+        <p class="subtitle">Diseñador Web, especialista en WordPress y desarrollador Front-end.</p>
+        <p class="description">
+            Combino mi experiencia en ventas y herramientas de diseño visual con desarrollo web para crear sitios que no solo se ven increíbles, sino que convierten visitantes en clientes.
+        </p>
         
-        <!-- Cabecera -->
-        <header class="hero">
-            <h1>Jerson Mercado</h1>
-            <p>Diseñador Web Especialista en WordPress, WooCommerce y Código Front-end.</p>
-            <p>📍 Lima, Perú</p>
-            <div class="skills">
-                <span class="skill-tag">WordPress</span>
-                <span class="skill-tag">WooCommerce</span>
-                <span class="skill-tag">HTML5</span>
-                <span class="skill-tag">CSS3</span>
-                <span class="skill-tag">Diseño UI/UX</span>
-            </div>
-        </header>
+        <div class="skills-container">
+            <span class="skill-tag">WordPress & WooCommerce</span>
+            <span class="skill-tag">HTML5 / CSS3 / JS</span>
+            <span class="skill-tag">Diseño UI/UX (Canva/Figma)</span>
+            <span class="skill-tag">Desarrollo con IA</span>
+        </div>
+    </header>
 
-        <!-- Proyectos -->
-        <section class="projects">
-            <h2>Casos de Estudio y Proyectos</h2>
-            <p>Ayudo a negocios a mejorar su presencia digital con webs rápidas, modernas y optimizadas para ventas.</p>
+    <section class="projects-section">
+        <h2 class="hidden">Casos de Estudio Destacados</h2>
+        
+        <div class="projects-grid">
+            <article class="card hidden">
+                <div class="card-icon">☕</div>
+                <h3>CafeClub.pe</h3>
+                <p><strong>El Desafío:</strong> Modernización de plataforma e-commerce para mejorar la experiencia de compra de productos de café.</p>
+                <p><strong>El Resultado:</strong> Rediseño completo de la interfaz de usuario, optimización del catálogo y una integración fluida en la pasarela de pagos.</p>
+            </article>
 
-            <div class="project-card">
-                <h3>☕ CafeClub.pe</h3>
-                <p><strong>El Desafío:</strong> Modernización de plataforma de comercio electrónico y mejora en la experiencia de usuario para la venta de productos de café.</p>
-                <p><strong>Mi rol:</strong> Rediseño completo de la interfaz, estructuración del catálogo e integración fluida de compras.</p>
-            </div>
+            <article class="card hidden">
+                <div class="card-icon">🏢</div>
+                <h3>Delitalia.pe</h3>
+                <p><strong>El Desafío:</strong> Desarrollo de plataforma corporativa, estructuración de intranet y gestión de reportes internos.</p>
+                <p><strong>El Resultado:</strong> Optimización de flujos de trabajo digitales y una arquitectura de información clara que potencia la gestión empresarial diaria.</p>
+            </article>
+        </div>
+    </section>
 
-            <div class="project-card">
-                <h3>🏢 Delitalia.pe</h3>
-                <p><strong>El Desafío:</strong> Desarrollo y mantenimiento de la plataforma corporativa, incluyendo la creación de intranet y gestión de reportes internos.</p>
-                <p><strong>Mi rol:</strong> Estructuración de la información, optimización de flujos de trabajo digitales y desarrollo web para potenciar la gestión empresarial.</p>
-            </div>
-        </section>
-
-        <!-- Contacto -->
-        <footer class="footer">
-            <h2>¿Trabajamos juntos?</h2>
-            <p>Estoy disponible para rediseños de sitios web, optimización de tiendas online y nuevos proyectos.</p>
-            <p>👉 <a href="ENLACE_A_TU_LINKEDIN_AQUI" target="_blank">Conecta conmigo en LinkedIn</a></p>
-            <p><small>© 2026 Jerson Mercado. Creado con código puro.</small></p>
-        </footer>
-
-    </div>
+    <footer class="footer hidden">
+        <p>© 2026 Jerson Mercado. Diseñado y desarrollado con código puro.</p>
+    </footer>
 
 </body>
 </html>
