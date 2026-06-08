@@ -1,22 +1,48 @@
-// Esperamos a que el contenido de la página cargue por completo
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // Seleccionamos todos los elementos que tienen la clase 'hidden'
     const hiddenElements = document.querySelectorAll('.hidden');
+    const year = document.getElementById('year');
+    const reduceMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-    // Creamos el observador para las animaciones al hacer scroll
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            // Si el elemento es visible en la pantalla
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show'); // Agregamos la clase que lo muestra
-            }
-        });
-    }, {
-        threshold: 0.1 // El elemento aparecerá cuando el 10% sea visible
-    });
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
 
-    // Le decimos al observador que vigile cada elemento oculto
-    hiddenElements.forEach((el) => observer.observe(el));
-    
+    const revealAll = () => {
+        hiddenElements.forEach((element) => element.classList.add('show'));
+    };
+
+    if (reduceMotionQuery.matches || !('IntersectionObserver' in window)) {
+        revealAll();
+        return;
+    }
+
+    const observer = new IntersectionObserver(
+        (entries, obs) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+
+                entry.target.classList.add('show');
+                obs.unobserve(entry.target);
+            });
+        },
+        {
+            threshold: 0.12,
+            rootMargin: '0px 0px -40px 0px'
+        }
+    );
+
+    hiddenElements.forEach((element) => observer.observe(element));
+
+    const handleMotionPreference = (event) => {
+        if (!event.matches) return;
+
+        revealAll();
+        observer.disconnect();
+    };
+
+    if (typeof reduceMotionQuery.addEventListener === 'function') {
+        reduceMotionQuery.addEventListener('change', handleMotionPreference);
+    } else {
+        reduceMotionQuery.addListener(handleMotionPreference);
+    }
 });
