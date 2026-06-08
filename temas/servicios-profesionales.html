@@ -3,79 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tema para servicios profesionales | Jerson Mercado</title>
-    <meta name="description" content="Demo de tema web para consultores, estudios, agencias y servicios profesionales con oferta, proceso y captaci&oacute;n de clientes.">
+    <title>Temas para servicios profesionales | Jerson Mercado</title>
+    <meta name="description" content="Cat&aacute;logo de temas web para consultores, estudios, agencias y servicios profesionales.">
     <link rel="stylesheet" href="tema.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="catalogo.js" defer></script>
 </head>
-<body class="services">
+<body class="catalog-page" data-rubro="servicios-profesionales">
     <div class="theme-shell">
-        <nav class="theme-nav" aria-label="Navegaci&oacute;n del tema">
+        <nav class="theme-nav" aria-label="Navegaci&oacute;n del rubro">
             <a class="brand-link" href="../index.html#temas"><i class="bx bx-arrow-back" aria-hidden="true"></i> Volver al portafolio</a>
             <div class="nav-actions">
                 <a href="https://www.linkedin.com/in/jersonmc3107/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20quiero%20un%20tema%20para%20servicios%20profesionales." target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </div>
         </nav>
-
-        <main>
-            <section class="theme-hero">
-                <div>
-                    <p class="kicker">Tema consultivo</p>
-                    <h1>Nexo Consultores</h1>
-                    <p class="lead">Una web para estudios, consultores, agencias y profesionales que necesitan explicar bien su oferta, mostrar autoridad y convertir visitas en reuniones comerciales.</p>
-                    <div class="theme-actions">
-                        <a class="theme-button primary" href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20me%20interesa%20el%20tema%20Nexo%20Consultores." target="_blank" rel="noopener noreferrer"><i class="bx bxl-whatsapp" aria-hidden="true"></i> Pedir este tema</a>
-                        <a class="theme-button secondary" href="../index.html#casos">Ver casos reales</a>
-                    </div>
-                    <div class="theme-proof">
-                        <span>Oferta clara</span>
-                        <span>Proceso comercial</span>
-                        <span>Agenda de reuniones</span>
-                    </div>
-                </div>
-
-                <aside class="preview" aria-label="Vista previa del tema">
-                    <div class="preview-top"><span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span></div>
-                    <div class="preview-body">
-                        <div class="visual-panel">
-                            <h3>Servicios de alto valor</h3>
-                            <p>Bloques para explicar problemas, soluciones, metodolog&iacute;a y siguiente paso de contacto.</p>
-                            <div class="visual-grid">
-                                <span><strong>Diagn&oacute;stico</strong><br>Revisi&oacute;n inicial</span>
-                                <span><strong>Implementaci&oacute;n</strong><br>Plan por etapas</span>
-                                <span><strong>Casos</strong><br>Resultados visibles</span>
-                                <span><strong>Reuni&oacute;n</strong><br>Agenda comercial</span>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </section>
-
-            <section class="section-block">
-                <div class="section-heading">
-                    <h2>Secciones incluidas</h2>
-                    <p>Estructura pensada para vender servicios donde la confianza, el proceso y la claridad pesan m&aacute;s que una simple lista de precios.</p>
-                </div>
-                <div class="feature-grid">
-                    <article class="feature-card"><i class="bx bx-briefcase-alt-2" aria-hidden="true"></i><h3>Oferta</h3><p>Servicios organizados por objetivo, problema que resuelven y tipo de cliente ideal.</p></article>
-                    <article class="feature-card"><i class="bx bx-git-branch" aria-hidden="true"></i><h3>Proceso</h3><p>Etapas de trabajo, entregables y forma de acompa&ntilde;amiento para reducir dudas.</p></article>
-                    <article class="feature-card"><i class="bx bx-calendar-star" aria-hidden="true"></i><h3>Conversi&oacute;n</h3><p>CTA para llamada, WhatsApp o formulario de diagn&oacute;stico seg&uacute;n el tipo de servicio.</p></article>
-                </div>
-            </section>
-
-            <section class="section-block">
-                <div class="cta-panel">
-                    <h2>Quiero una web para vender servicios</h2>
-                    <p>Este tema puede adaptarse a consultores, abogados, contadores, agencias, estudios creativos o servicios B2B.</p>
-                    <div class="theme-actions">
-                        <a class="theme-button primary" href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20quiero%20una%20web%20para%20mis%20servicios%20profesionales." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
-                        <a class="theme-button secondary" href="https://www.linkedin.com/in/jersonmc3107/" target="_blank" rel="noopener noreferrer">Contactar en LinkedIn</a>
-                    </div>
-                </div>
-            </section>
-        </main>
+        <main id="rubro-root"></main>
     </div>
-    <footer class="footer">Tema demo por Jerson Mercado</footer>
+    <footer class="footer">Temas por rubro por Jerson Mercado</footer>
 </body>
 </html>

@@ -3,79 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tema para restaurantes y cafeter&iacute;as | Jerson Mercado</title>
-    <meta name="description" content="Demo de tema web para restaurantes, cafeter&iacute;as y negocios gastron&oacute;micos con men&uacute;, reservas y CTA directo.">
+    <title>Temas para restaurantes y cafeter&iacute;as | Jerson Mercado</title>
+    <meta name="description" content="Cat&aacute;logo de temas web para restaurantes, cafeter&iacute;as y negocios gastron&oacute;micos.">
     <link rel="stylesheet" href="tema.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="catalogo.js" defer></script>
 </head>
-<body class="restaurant">
+<body class="catalog-page" data-rubro="restaurantes-cafeterias">
     <div class="theme-shell">
-        <nav class="theme-nav" aria-label="Navegaci&oacute;n del tema">
+        <nav class="theme-nav" aria-label="Navegaci&oacute;n del rubro">
             <a class="brand-link" href="../index.html#temas"><i class="bx bx-arrow-back" aria-hidden="true"></i> Volver al portafolio</a>
             <div class="nav-actions">
                 <a href="https://www.linkedin.com/in/jersonmc3107/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20quiero%20un%20tema%20para%20restaurante%20o%20cafeteria." target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </div>
         </nav>
-
-        <main>
-            <section class="theme-hero">
-                <div>
-                    <p class="kicker">Tema gastron&oacute;mico</p>
-                    <h1>Mesa Brava</h1>
-                    <p class="lead">Una web para restaurantes y cafeter&iacute;as que necesitan mostrar carta, reservas, delivery, horarios y una experiencia visual que abra el apetito desde el primer pantallazo.</p>
-                    <div class="theme-actions">
-                        <a class="theme-button primary" href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20me%20interesa%20el%20tema%20Mesa%20Brava." target="_blank" rel="noopener noreferrer"><i class="bx bxl-whatsapp" aria-hidden="true"></i> Pedir este tema</a>
-                        <a class="theme-button secondary" href="../index.html#casos">Ver casos reales</a>
-                    </div>
-                    <div class="theme-proof">
-                        <span>Carta y categor&iacute;as</span>
-                        <span>Reservas o pedidos</span>
-                        <span>Dise&ntilde;o responsive</span>
-                    </div>
-                </div>
-
-                <aside class="preview" aria-label="Vista previa del tema">
-                    <div class="preview-top"><span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span></div>
-                    <div class="preview-body">
-                        <div class="visual-panel">
-                            <h3>Carta destacada</h3>
-                            <p>Especiales del d&iacute;a, platos m&aacute;s vendidos y bot&oacute;n directo para reservar mesa.</p>
-                            <div class="visual-grid">
-                                <span><strong>Caf&eacute; de autor</strong><br>Desde S/ 12</span>
-                                <span><strong>Brunch</strong><br>Reservas online</span>
-                                <span><strong>Delivery</strong><br>WhatsApp directo</span>
-                                <span><strong>Galer&iacute;a</strong><br>Ambiente y platos</span>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </section>
-
-            <section class="section-block">
-                <div class="section-heading">
-                    <h2>Secciones incluidas</h2>
-                    <p>Estructura lista para comunicar r&aacute;pido qu&eacute; vendes, c&oacute;mo reservar y por qu&eacute; elegir tu local.</p>
-                </div>
-                <div class="feature-grid">
-                    <article class="feature-card"><i class="bx bx-food-menu" aria-hidden="true"></i><h3>Men&uacute; visual</h3><p>Platos por categor&iacute;a, precios, destacados y descripci&oacute;n breve para facilitar la decisi&oacute;n.</p></article>
-                    <article class="feature-card"><i class="bx bx-calendar-check" aria-hidden="true"></i><h3>Reservas</h3><p>CTA para WhatsApp, formulario o enlace a herramienta externa de reservas.</p></article>
-                    <article class="feature-card"><i class="bx bx-map" aria-hidden="true"></i><h3>Local y horarios</h3><p>Ubicaci&oacute;n, horarios, redes sociales y datos clave para visitas presenciales.</p></article>
-                </div>
-            </section>
-
-            <section class="section-block">
-                <div class="cta-panel">
-                    <h2>Quiero una web gastron&oacute;mica como esta</h2>
-                    <p>Este tema puede adaptarse a cafeter&iacute;as, restaurantes, dark kitchens, pasteler&iacute;as o bares.</p>
-                    <div class="theme-actions">
-                        <a class="theme-button primary" href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20quiero%20una%20web%20para%20mi%20negocio%20gastronomico." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
-                        <a class="theme-button secondary" href="https://www.linkedin.com/in/jersonmc3107/" target="_blank" rel="noopener noreferrer">Contactar en LinkedIn</a>
-                    </div>
-                </div>
-            </section>
-        </main>
+        <main id="rubro-root"></main>
     </div>
-    <footer class="footer">Tema demo por Jerson Mercado</footer>
+    <footer class="footer">Temas por rubro por Jerson Mercado</footer>
 </body>
 </html>

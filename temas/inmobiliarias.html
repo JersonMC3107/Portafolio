@@ -3,79 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tema para inmobiliarias | Jerson Mercado</title>
-    <meta name="description" content="Demo de tema web para inmobiliarias, agentes y proyectos de propiedades con fichas, filtros y captaci&oacute;n de leads.">
+    <title>Temas para inmobiliarias | Jerson Mercado</title>
+    <meta name="description" content="Cat&aacute;logo de temas web para inmobiliarias, agentes y proyectos de propiedades.">
     <link rel="stylesheet" href="tema.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="catalogo.js" defer></script>
 </head>
-<body class="realestate">
+<body class="catalog-page" data-rubro="inmobiliarias">
     <div class="theme-shell">
-        <nav class="theme-nav" aria-label="Navegaci&oacute;n del tema">
+        <nav class="theme-nav" aria-label="Navegaci&oacute;n del rubro">
             <a class="brand-link" href="../index.html#temas"><i class="bx bx-arrow-back" aria-hidden="true"></i> Volver al portafolio</a>
             <div class="nav-actions">
                 <a href="https://www.linkedin.com/in/jersonmc3107/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20quiero%20un%20tema%20para%20inmobiliaria." target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </div>
         </nav>
-
-        <main>
-            <section class="theme-hero">
-                <div>
-                    <p class="kicker">Tema inmobiliario</p>
-                    <h1>Habita Norte</h1>
-                    <p class="lead">Una web para inmobiliarias, agentes y proyectos que necesitan presentar propiedades, destacar ubicaciones y convertir visitas en contactos calificados.</p>
-                    <div class="theme-actions">
-                        <a class="theme-button primary" href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20me%20interesa%20el%20tema%20Habita%20Norte." target="_blank" rel="noopener noreferrer"><i class="bx bxl-whatsapp" aria-hidden="true"></i> Pedir este tema</a>
-                        <a class="theme-button secondary" href="../index.html#casos">Ver casos reales</a>
-                    </div>
-                    <div class="theme-proof">
-                        <span>Fichas de propiedad</span>
-                        <span>Captaci&oacute;n de leads</span>
-                        <span>WhatsApp comercial</span>
-                    </div>
-                </div>
-
-                <aside class="preview" aria-label="Vista previa del tema">
-                    <div class="preview-top"><span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span></div>
-                    <div class="preview-body">
-                        <div class="visual-panel">
-                            <h3>Propiedades destacadas</h3>
-                            <p>Filtro por tipo, zona, precio y CTA para coordinar visita o solicitar ficha.</p>
-                            <div class="visual-grid">
-                                <span><strong>Departamentos</strong><br>Desde 72 m2</span>
-                                <span><strong>Casas</strong><br>Zonas premium</span>
-                                <span><strong>Proyectos</strong><br>Entrega futura</span>
-                                <span><strong>Agenda</strong><br>Visita guiada</span>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </section>
-
-            <section class="section-block">
-                <div class="section-heading">
-                    <h2>Secciones incluidas</h2>
-                    <p>Dise&ntilde;ado para presentar inmuebles de forma escaneable y facilitar el contacto comercial.</p>
-                </div>
-                <div class="feature-grid">
-                    <article class="feature-card"><i class="bx bx-building-house" aria-hidden="true"></i><h3>Cat&aacute;logo</h3><p>Tarjetas de propiedades con precio, zona, metraje, habitaciones y estado.</p></article>
-                    <article class="feature-card"><i class="bx bx-filter-alt" aria-hidden="true"></i><h3>Filtros visuales</h3><p>Orden por tipo de propiedad, ubicaci&oacute;n, presupuesto y objetivo de compra.</p></article>
-                    <article class="feature-card"><i class="bx bx-phone-call" aria-hidden="true"></i><h3>Contacto r&aacute;pido</h3><p>CTA para WhatsApp, formulario o agenda de visita con asesor.</p></article>
-                </div>
-            </section>
-
-            <section class="section-block">
-                <div class="cta-panel">
-                    <h2>Quiero una web inmobiliaria</h2>
-                    <p>Este tema puede adaptarse a inmobiliarias, agentes independientes, constructoras o proyectos puntuales.</p>
-                    <div class="theme-actions">
-                        <a class="theme-button primary" href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20quiero%20una%20web%20para%20mi%20inmobiliaria." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
-                        <a class="theme-button secondary" href="https://www.linkedin.com/in/jersonmc3107/" target="_blank" rel="noopener noreferrer">Contactar en LinkedIn</a>
-                    </div>
-                </div>
-            </section>
-        </main>
+        <main id="rubro-root"></main>
     </div>
-    <footer class="footer">Tema demo por Jerson Mercado</footer>
+    <footer class="footer">Temas por rubro por Jerson Mercado</footer>
 </body>
 </html>

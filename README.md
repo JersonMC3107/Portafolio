@@ -9,7 +9,7 @@ Portafolio est&aacute;tico publicado con GitHub Pages para presentar servicios d
 - CTA hacia LinkedIn y WhatsApp.
 - Imagen Open Graph personalizada para compartir el portafolio.
 - Tarjetas visuales para CafeClub.pe y Delitalia.pe con logo, portada y enlace directo.
-- Secci&oacute;n de temas web por rubro desarrollados con c&oacute;digo, cada una con una demo navegable.
+- Secci&oacute;n de temas web por rubro desarrollados con c&oacute;digo, con cat&aacute;logo por rubro y demo completa por tema.
 
 ## Stack
 
@@ -24,7 +24,9 @@ Portafolio est&aacute;tico publicado con GitHub Pages para presentar servicios d
 - `style.css`: estilos visuales, responsive y estados de accesibilidad.
 - `script.js`: animaciones de entrada, a&ntilde;o autom&aacute;tico y soporte para reduced motion.
 - `assets/img/`: imagen Open Graph del portafolio.
-- `temas/`: demos por rubro para restaurantes, cl&iacute;nicas, inmobiliarias, servicios profesionales, tiendas y educaci&oacute;n.
+- `temas/`: cat&aacute;logos por rubro para restaurantes, cl&iacute;nicas, inmobiliarias, servicios profesionales, tiendas y educaci&oacute;n.
+- `temas/catalogo.js`: datos de rubros y temas; aqu&iacute; se pueden sumar nuevas opciones m&aacute;s adelante.
+- `temas/demo.html`: plantilla com&uacute;n que renderiza una web demo completa seg&uacute;n el tema seleccionado.
 
 ## Casos de estudio
 

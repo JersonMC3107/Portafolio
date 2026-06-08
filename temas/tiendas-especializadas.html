@@ -3,79 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tema para tiendas especializadas | Jerson Mercado</title>
-    <meta name="description" content="Demo de tema web para tiendas especializadas y cat&aacute;logos online con productos destacados, categor&iacute;as y compra guiada.">
+    <title>Temas para tiendas especializadas | Jerson Mercado</title>
+    <meta name="description" content="Cat&aacute;logo de temas web para tiendas especializadas, cat&aacute;logos y e-commerce.">
     <link rel="stylesheet" href="tema.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="catalogo.js" defer></script>
 </head>
-<body class="store">
+<body class="catalog-page" data-rubro="tiendas-especializadas">
     <div class="theme-shell">
-        <nav class="theme-nav" aria-label="Navegaci&oacute;n del tema">
+        <nav class="theme-nav" aria-label="Navegaci&oacute;n del rubro">
             <a class="brand-link" href="../index.html#temas"><i class="bx bx-arrow-back" aria-hidden="true"></i> Volver al portafolio</a>
             <div class="nav-actions">
                 <a href="https://www.linkedin.com/in/jersonmc3107/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20quiero%20un%20tema%20para%20tienda%20especializada." target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </div>
         </nav>
-
-        <main>
-            <section class="theme-hero">
-                <div>
-                    <p class="kicker">Tema e-commerce</p>
-                    <h1>Nativa Store</h1>
-                    <p class="lead">Una base visual para tiendas con productos espec&iacute;ficos, categor&iacute;as claras, beneficios de compra y estructura lista para pasar a WooCommerce.</p>
-                    <div class="theme-actions">
-                        <a class="theme-button primary" href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20me%20interesa%20el%20tema%20Nativa%20Store." target="_blank" rel="noopener noreferrer"><i class="bx bxl-whatsapp" aria-hidden="true"></i> Pedir este tema</a>
-                        <a class="theme-button secondary" href="../index.html#casos">Ver casos reales</a>
-                    </div>
-                    <div class="theme-proof">
-                        <span>Productos destacados</span>
-                        <span>Compra guiada</span>
-                        <span>Base WooCommerce</span>
-                    </div>
-                </div>
-
-                <aside class="preview" aria-label="Vista previa del tema">
-                    <div class="preview-top"><span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span></div>
-                    <div class="preview-body">
-                        <div class="visual-panel">
-                            <h3>Categor&iacute;as con intenci&oacute;n</h3>
-                            <p>Presentaci&oacute;n de colecciones, beneficios, productos estrella y rutas de compra.</p>
-                            <div class="visual-grid">
-                                <span><strong>Nuevos</strong><br>Lanzamientos</span>
-                                <span><strong>Favoritos</strong><br>M&aacute;s vendidos</span>
-                                <span><strong>Gu&iacute;as</strong><br>Compra por uso</span>
-                                <span><strong>Checkout</strong><br>Pago integrado</span>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </section>
-
-            <section class="section-block">
-                <div class="section-heading">
-                    <h2>Secciones incluidas</h2>
-                    <p>Dise&ntilde;ado para que el visitante encuentre r&aacute;pido el producto correcto y avance hacia consulta o compra.</p>
-                </div>
-                <div class="feature-grid">
-                    <article class="feature-card"><i class="bx bx-category" aria-hidden="true"></i><h3>Categor&iacute;as</h3><p>Bloques para ordenar productos por necesidad, colecci&oacute;n, precio o tipo de cliente.</p></article>
-                    <article class="feature-card"><i class="bx bx-cart-add" aria-hidden="true"></i><h3>Productos</h3><p>Tarjetas con imagen, beneficio, precio, etiqueta comercial y CTA de compra.</p></article>
-                    <article class="feature-card"><i class="bx bx-shield-quarter" aria-hidden="true"></i><h3>Confianza</h3><p>Beneficios de env&iacute;o, garant&iacute;a, medios de pago y soporte previo a la compra.</p></article>
-                </div>
-            </section>
-
-            <section class="section-block">
-                <div class="cta-panel">
-                    <h2>Quiero una tienda online mejor presentada</h2>
-                    <p>Este tema puede adaptarse a tiendas gourmet, tecnolog&iacute;a, moda, productos naturales, regalos o cat&aacute;logos especializados.</p>
-                    <div class="theme-actions">
-                        <a class="theme-button primary" href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20quiero%20una%20web%20para%20mi%20tienda%20especializada." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
-                        <a class="theme-button secondary" href="https://www.linkedin.com/in/jersonmc3107/" target="_blank" rel="noopener noreferrer">Contactar en LinkedIn</a>
-                    </div>
-                </div>
-            </section>
-        </main>
+        <main id="rubro-root"></main>
     </div>
-    <footer class="footer">Tema demo por Jerson Mercado</footer>
+    <footer class="footer">Temas por rubro por Jerson Mercado</footer>
 </body>
 </html>

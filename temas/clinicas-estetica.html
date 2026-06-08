@@ -3,79 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tema para cl&iacute;nicas y est&eacute;tica | Jerson Mercado</title>
-    <meta name="description" content="Demo de tema web para cl&iacute;nicas, centros est&eacute;ticos y consultorios con servicios, especialistas y agenda.">
+    <title>Temas para cl&iacute;nicas y est&eacute;tica | Jerson Mercado</title>
+    <meta name="description" content="Cat&aacute;logo de temas web para cl&iacute;nicas, centros est&eacute;ticos, consultorios y bienestar.">
     <link rel="stylesheet" href="tema.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="catalogo.js" defer></script>
 </head>
-<body class="clinic">
+<body class="catalog-page" data-rubro="clinicas-estetica">
     <div class="theme-shell">
-        <nav class="theme-nav" aria-label="Navegaci&oacute;n del tema">
+        <nav class="theme-nav" aria-label="Navegaci&oacute;n del rubro">
             <a class="brand-link" href="../index.html#temas"><i class="bx bx-arrow-back" aria-hidden="true"></i> Volver al portafolio</a>
             <div class="nav-actions">
                 <a href="https://www.linkedin.com/in/jersonmc3107/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20quiero%20un%20tema%20para%20clinica%20o%20estetica." target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </div>
         </nav>
-
-        <main>
-            <section class="theme-hero">
-                <div>
-                    <p class="kicker">Tema salud y belleza</p>
-                    <h1>Aura Clinic</h1>
-                    <p class="lead">Una web sobria para servicios m&eacute;dicos, est&eacute;ticos o bienestar, enfocada en confianza, tratamientos, especialistas, testimonios y agenda de citas.</p>
-                    <div class="theme-actions">
-                        <a class="theme-button primary" href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20me%20interesa%20el%20tema%20Aura%20Clinic." target="_blank" rel="noopener noreferrer"><i class="bx bxl-whatsapp" aria-hidden="true"></i> Pedir este tema</a>
-                        <a class="theme-button secondary" href="../index.html#casos">Ver casos reales</a>
-                    </div>
-                    <div class="theme-proof">
-                        <span>Servicios claros</span>
-                        <span>Agenda de citas</span>
-                        <span>Prueba social</span>
-                    </div>
-                </div>
-
-                <aside class="preview" aria-label="Vista previa del tema">
-                    <div class="preview-top"><span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span></div>
-                    <div class="preview-body">
-                        <div class="visual-panel">
-                            <h3>Tratamientos destacados</h3>
-                            <p>Presentaci&oacute;n de servicios, beneficios y bot&oacute;n para agendar una evaluaci&oacute;n.</p>
-                            <div class="visual-grid">
-                                <span><strong>Facial</strong><br>Planes por objetivo</span>
-                                <span><strong>Corporal</strong><br>Paquetes visibles</span>
-                                <span><strong>Especialistas</strong><br>Perfil profesional</span>
-                                <span><strong>Citas</strong><br>WhatsApp o formulario</span>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </section>
-
-            <section class="section-block">
-                <div class="section-heading">
-                    <h2>Secciones incluidas</h2>
-                    <p>Dise&ntilde;ado para que el visitante entienda el tratamiento, resuelva dudas y agende sin fricci&oacute;n.</p>
-                </div>
-                <div class="feature-grid">
-                    <article class="feature-card"><i class="bx bx-plus-medical" aria-hidden="true"></i><h3>Servicios</h3><p>Tarjetas por tratamiento, objetivos, duraci&oacute;n y beneficios principales.</p></article>
-                    <article class="feature-card"><i class="bx bx-user-check" aria-hidden="true"></i><h3>Equipo</h3><p>Perfiles de especialistas, certificaciones y enfoque de atenci&oacute;n.</p></article>
-                    <article class="feature-card"><i class="bx bx-message-rounded-check" aria-hidden="true"></i><h3>Confianza</h3><p>Testimonios, preguntas frecuentes y CTA para evaluaci&oacute;n.</p></article>
-                </div>
-            </section>
-
-            <section class="section-block">
-                <div class="cta-panel">
-                    <h2>Quiero una web de salud o est&eacute;tica</h2>
-                    <p>Este tema puede adaptarse a cl&iacute;nicas, consultorios, centros est&eacute;ticos, spas o wellness.</p>
-                    <div class="theme-actions">
-                        <a class="theme-button primary" href="https://wa.me/51947317024?text=Hola%20Jerson%2C%20quiero%20una%20web%20para%20mi%20clinica%20o%20centro%20estetico." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
-                        <a class="theme-button secondary" href="https://www.linkedin.com/in/jersonmc3107/" target="_blank" rel="noopener noreferrer">Contactar en LinkedIn</a>
-                    </div>
-                </div>
-            </section>
-        </main>
+        <main id="rubro-root"></main>
     </div>
-    <footer class="footer">Tema demo por Jerson Mercado</footer>
+    <footer class="footer">Temas por rubro por Jerson Mercado</footer>
 </body>
 </html>
