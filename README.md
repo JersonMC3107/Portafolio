@@ -6,10 +6,10 @@ Portafolio est&aacute;tico publicado con GitHub Pages para presentar servicios d
 
 - Servicios ofrecidos para webs corporativas, e-commerce y redise&ntilde;os.
 - Casos de estudio de proyectos reales.
-- CTA hacia LinkedIn.
+- CTA hacia LinkedIn y WhatsApp.
 - Imagen Open Graph personalizada para compartir el portafolio.
 - Tarjetas visuales para CafeClub.pe y Delitalia.pe con logo, portada y enlace directo.
-- Secci&oacute;n de temas web por rubro desarrollados con c&oacute;digo.
+- Secci&oacute;n de temas web por rubro desarrollados con c&oacute;digo, cada una con una demo navegable.
 
 ## Stack
 
@@ -24,6 +24,7 @@ Portafolio est&aacute;tico publicado con GitHub Pages para presentar servicios d
 - `style.css`: estilos visuales, responsive y estados de accesibilidad.
 - `script.js`: animaciones de entrada, a&ntilde;o autom&aacute;tico y soporte para reduced motion.
 - `assets/img/`: imagen Open Graph del portafolio.
+- `temas/`: demos por rubro para restaurantes, cl&iacute;nicas, inmobiliarias, servicios profesionales, tiendas y educaci&oacute;n.
 
 ## Casos de estudio
 
@@ -39,6 +40,7 @@ El sitio est&aacute; preparado para publicarse desde GitHub Pages:
 ## Contacto
 
 - LinkedIn: `https://www.linkedin.com/in/jersonmc3107/`
+- WhatsApp: `https://wa.me/51947317024`
 
 ## About recomendado para GitHub
 
